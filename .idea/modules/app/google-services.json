@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1076458612754",
+    "firebase_url": "https://illuminati-b358b.firebaseio.com",
+    "project_id": "illuminati-b358b",
+    "storage_bucket": "illuminati-b358b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076458612754:android:eed467b81efa5b703190cb",
+        "android_client_info": {
+          "package_name": "tech.berjis.illuminati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076458612754-bvjn6eg3vdk11tqr954gvsfr5pr0elr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.berjis.illuminati",
+            "certificate_hash": "cab4161d66aac001d1909541784ffa50b1aa4a4e"
+          }
+        },
+        {
+          "client_id": "1076458612754-10jo3ht8o1267sih755lrghr9os5rjpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjmRBu_HrOLrk1CUJPhWyKALzJ45beACA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076458612754-10jo3ht8o1267sih755lrghr9os5rjpn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

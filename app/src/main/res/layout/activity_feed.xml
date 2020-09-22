@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".FeedActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Apostle"
+            app:layout_constraintBottom_toBottomOf="@id/logo"
+            app:layout_constraintStart_toEndOf="@id/logo"
+            app:layout_constraintTop_toTopOf="@id/logo" />
+
+        <View
+            android:id="@+id/firstView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorPrimaryAlpha"
+            app:layout_constraintBottom_toTopOf="@id/journeyImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <View
+            android:id="@+id/nextItemView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/white_views"
+            app:layout_constraintBottom_toBottomOf="@id/nextStepDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <TextView
+            android:id="@+id/nextStepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Next Step"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/nextItemView"
+            app:layout_constraintTop_toTopOf="@id/nextItemView" />
+
+        <TextView
+            android:id="@+id/nextStepTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Wed 10th"
+            android:textColor="@color/gradient_start_color"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/nextItemView"
+            app:layout_constraintTop_toBottomOf="@id/nextStepText" />
+
+        <TextView
+            android:id="@+id/nextStepDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:alpha="0.5"
+            android:paddingBottom="30dp"
+            android:text="Transcend all troubles"
+            android:textColor="#333333"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/nextItemView"
+            app:layout_constraintTop_toBottomOf="@id/nextStepTime" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/nextStepImg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:alpha="0.2"
+            android:src="@drawable/vector_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/nextItemView"
+            app:layout_constraintEnd_toEndOf="@+id/nextItemView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/journeyImg"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/vector_logo"
+            app:layout_constraintEnd_toStartOf="@id/q"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nextItemView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/journeyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="My Journey"
+            app:layout_constraintEnd_toStartOf="@id/q"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/journeyImg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/storyImg"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/vector_logo"
+            app:layout_constraintEnd_toStartOf="@id/half"
+            app:layout_constraintStart_toEndOf="@id/q"
+            app:layout_constraintTop_toBottomOf="@id/nextItemView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/storyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stories"
+            app:layout_constraintEnd_toStartOf="@id/half"
+            app:layout_constraintStart_toEndOf="@id/q"
+            app:layout_constraintTop_toBottomOf="@id/storyImg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/contributionImg"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/vector_logo"
+            app:layout_constraintEnd_toStartOf="@id/q2"
+            app:layout_constraintStart_toEndOf="@id/half"
+            app:layout_constraintTop_toBottomOf="@id/nextItemView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contributionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Contributions"
+            app:layout_constraintEnd_toStartOf="@id/q2"
+            app:layout_constraintStart_toEndOf="@id/half"
+            app:layout_constraintTop_toBottomOf="@id/contributionImg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/badgesImg"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/vector_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/q2"
+            app:layout_constraintTop_toBottomOf="@id/nextItemView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/badgesText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Badges"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/q2"
+            app:layout_constraintTop_toBottomOf="@id/badgesImg" />
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorPrimaryAlpha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/exploreBtn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exploreBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/btn_gradient_normal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Explore"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/storyText" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageBgArea"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/gradient_start_color"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/featuredText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Featured"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/imageBgArea"
+            app:layout_constraintTop_toTopOf="@id/imageBgArea" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="View All"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/featuredText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/featuredText" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/featuredViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/featuredText" />
+
+        <View
+            android:id="@+id/q"
+            android:layout_width="0.000001dp"
+            android:layout_height="0.000001dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/half"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/half"
+            android:layout_width="0.000001dp"
+            android:layout_height="0.000001dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/q2"
+            android:layout_width="0.000001dp"
+            android:layout_height="0.000001dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/half" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

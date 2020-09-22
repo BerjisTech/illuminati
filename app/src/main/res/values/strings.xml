@@ -1,0 +1,7 @@
+<resources>
+    <string name="public_key">FLWPUBK-0fb05710123343c235bdde25eee057cd-X</string>
+    <string name="encryption_key">0ec825960e6991e0f0bbb219</string>
+
+
+    <string name="app_name">Libera</string>
+</resources>
